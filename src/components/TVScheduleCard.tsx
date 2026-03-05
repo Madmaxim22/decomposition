@@ -1,16 +1,27 @@
 import { InfoCard } from './InfoCard.tsx'
 
-/** Карточка с кратким списком телепрограммы. */
+/**
+ * Элемент списка телепрограммы.
+ */
 export interface TVScheduleItem {
   time: string
   title: string
   channel: string
 }
 
+/**
+ * Пропсы карточки телепрограммы.
+ */
 export interface TVScheduleCardProps {
   items: TVScheduleItem[]
 }
 
+/**
+ * Карточка с кратким списком телепрограммы.
+ *
+ * @param items Массив элементов телепрограммы.
+ * @returns Информационная карточка со списком телепередач.
+ */
 export function TVScheduleCard({ items }: TVScheduleCardProps) {
   return (
     <InfoCard title="Телепрограмма">

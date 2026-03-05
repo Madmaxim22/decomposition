@@ -1,6 +1,10 @@
 import { InfoCard } from './InfoCard.tsx'
 
-/** Карточка с краткой сводкой погоды на сегодня. */
+/**
+ * Карточка с краткой сводкой погоды на сегодня.
+ *
+ * @returns Информационная карточка с текущей и дневной температурой.
+ */
 export function WeatherCard() {
   return (
     <InfoCard title="Погода">

@@ -3,7 +3,11 @@ import { MapCard } from './MapCard.tsx'
 import { TVScheduleCard, type TVScheduleCardProps } from './TVScheduleCard.tsx'
 import { WeatherCard } from './WeatherCard.tsx'
 
-/** Сетка карточек с погодой, картой, телепрограммой и эфиром. */
+/**
+ * Сетка карточек с погодой, картой, телепрограммой и блоком «Эфир».
+ *
+ * @returns Контейнер с набором информационных карточек.
+ */
 export function InfoGrid() {
   const tvItems: TVScheduleCardProps['items'] = [
     { time: '02:15', title: 'THT.Best', channel: 'THT International' },

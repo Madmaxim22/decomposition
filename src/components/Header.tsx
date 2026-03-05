@@ -7,7 +7,11 @@ import type { NewsItemProps } from './NewsItem'
 import type { RateItemProps } from './RateItem'
 import type { Tab } from './Tabs'
 
-/** Компонент шапки страницы с логотипом, вкладками, новостями и поиском. */
+/**
+ * Компонент шапки страницы с логотипом, вкладками, новостями, курсами валют и поиском.
+ *
+ * @returns Разметка шапки приложения.
+ */
 export function Header() {
   const tabs: Tab[] = [
     { id: 'media', label: 'Сейчас в СМИ', isActive: true },

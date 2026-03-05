@@ -1,4 +1,6 @@
-/** Контейнер вкладок верхнего меню шапки. */
+/**
+ * Описание отдельной вкладки верхнего меню.
+ */
 export interface Tab {
   id: string
   label: string
@@ -6,10 +8,19 @@ export interface Tab {
   isActive?: boolean
 }
 
+/**
+ * Пропсы контейнера вкладок.
+ */
 export interface TabsProps {
   tabs: Tab[]
 }
 
+/**
+ * Контейнер вкладок верхнего меню шапки.
+ *
+ * @param tabs Массив вкладок для отображения.
+ * @returns Навигационный блок с ссылками-вкладками.
+ */
 export function Tabs({ tabs }: TabsProps) {
   return (
     <nav className="tabs">

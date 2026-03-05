@@ -1,15 +1,26 @@
 import { InfoCard } from './InfoCard.tsx'
 
-/** Карточка блока «Эфир» с текущими трансляциями. */
+/**
+ * Элемент списка трансляций блока «Эфир».
+ */
 export interface LiveBroadcastItem {
   title: string
   source: string
 }
 
+/**
+ * Пропсы карточки блока «Эфир».
+ */
 export interface LiveBroadcastCardProps {
   items: LiveBroadcastItem[]
 }
 
+/**
+ * Карточка блока «Эфир» с текущими трансляциями.
+ *
+ * @param items Массив трансляций для отображения.
+ * @returns Информационная карточка с ненумерованным списком эфиров.
+ */
 export function LiveBroadcastCard({ items }: LiveBroadcastCardProps) {
   return (
     <InfoCard title="Эфир">
